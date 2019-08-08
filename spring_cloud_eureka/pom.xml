@@ -3,23 +3,30 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-	   <groupId>com.zj</groupId>
-		<artifactId>spring_parent</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zj.eureka</groupId>
 	<artifactId>spring_cloud_eureka</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>spring_cloud_eureka</name>
 	<description>Demo project for Spring Boot</description>
 
-	
+	<properties>
+	<!-- 解决pom第一行报小红X -->
+		<maven-jar-plugin.version>3.0.0</maven-jar-plugin.version>
+		<java.version>1.8</java.version>
+		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
