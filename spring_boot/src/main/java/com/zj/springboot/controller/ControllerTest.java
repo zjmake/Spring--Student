@@ -17,7 +17,7 @@ public class ControllerTest {
 	
 	@Autowired
     private DiscoveryClient client;
-	
+	//http://localhost:8080/hello
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String select() {
 		
